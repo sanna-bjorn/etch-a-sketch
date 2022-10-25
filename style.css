@@ -1,0 +1,15 @@
+#container {
+  height: 140px;
+  padding: 16px;
+  border: 4px solid indigo;
+  display: flex;
+  justify-content: space-between;
+}
+
+.grid {
+  display: grid;
+  width: 60px;
+  height: 60px;
+  border: 4px solid darkslategray;
+  background: skyblue;
+}
