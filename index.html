@@ -7,16 +7,21 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1>Etch-A-Sketch</h1>
-      <div class="grid-dimensions"></div>
-      <!-- <div class="button-container">
-        <button class="clear-button" onclick="clearGrid()">Clear</button>
-        <button class="reset-button" onclick="resetGrid()">Reset</button> -->
+    <header></header>
+    <div class="flex-container">
+      <div class="title">Sketch board</div>
+
+      <div class="buttons">
+        <button>Black</button>
+        <button>White</button>
+        <button>Random</button>
+        <button>Reset</button>
+        <div input type="text" placeholder="Size of board" value="16"></div>
+        <button>Set size</button>
+        <div class="grid"></div>
       </div>
-    </header>
-    <div id="container">
-      <div class="grid"></div>
-  </div>
+    </div>
+
+    <script src="main.js"></script>
   </body>
 </html>

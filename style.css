@@ -1,15 +1,43 @@
-#container {
-  height: 140px;
+/* body {
+  min-height: 100vh;
+  height: 100vh;
+  background-color: rgb(245, 212, 212);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2%;
+} */
+
+.flex-container {
+  height: 340px;
+  width: 960px;
   padding: 16px;
   border: 4px solid indigo;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2%;
 }
 
 .grid {
-  display: grid;
   width: 60px;
   height: 60px;
   border: 4px solid darkslategray;
-  background: skyblue;
+  background: rgb(216, 237, 245);
+  display: grid;
+  /* flex-wrap: column wrap; */
+  box-sizing: content-box;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons {
+  max-height: 35px;
+  display: flex;
+  align-items: flex-start;
 }
