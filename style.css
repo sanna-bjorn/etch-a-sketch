@@ -1,43 +1,49 @@
-/* body {
-  min-height: 100vh;
-  height: 100vh;
-  background-color: rgb(245, 212, 212);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 2%;
-} */
-
 .flex-container {
-  height: 340px;
   width: 960px;
-  padding: 16px;
+  padding: 6px;
   border: 4px solid indigo;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 2%;
+  justify-content: center;
+}
+
+.flex-container div {
 }
 
 .grid {
-  width: 60px;
-  height: 60px;
-  border: 4px solid darkslategray;
-  background: rgb(216, 237, 245);
   display: grid;
-  /* flex-wrap: column wrap; */
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  width: 30px;
+  height: 30px;
+  border: 2px solid darkslategray;
+  background: rgb(216, 237, 245);
+  flex-wrap: wrap;
   box-sizing: content-box;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .title {
   display: flex;
   justify-content: center;
+  padding: 10px;
+  align-items: center;
+  width: 100%;
 }
 
 .buttons {
   max-height: 35px;
   display: flex;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.hover {
+  border-color: #ffc600;
+  background-color: black;
 }
