@@ -6,8 +6,8 @@ for (i = 0; i < 16; i++) {
   container.appendChild(grid);
 }
 
-window.addEventListener("hover", playSound);
-
-// loop 16 x 16 times through the div creation
-// use flexbox to line the divs
-// check borders
+window.addEventListener("mouseover", function (e) {
+  const trackMouse = document.querySelector(e.mouseHover);
+  trackMouse.hover();
+  hover.classList.add("hover");
+});
