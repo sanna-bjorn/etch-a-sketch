@@ -11,3 +11,9 @@ flexbox
 CSS Grid
 
 -Be careful with borders and margins, as they can adjust the size of the squares!
+
+Set up a “hover” effect so that the grid divs change color when your mouse passes over them, leaving a (pixelated) trail through your grid like a pen would.
+There are multiple ways to change the color of the divs, including:
+-adding a new class to the div.
+-changing the div’s background color using JavaScript.
+
