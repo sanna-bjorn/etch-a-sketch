@@ -54,12 +54,16 @@ function reSet() {
   boxs.forEach((box) => box.remove());
 }
 
-// resize button to add a desired amount of squares on the grid
+// resize button to add a desired amount of squares on the grid. Max number set on 100 to avoid crashing.
 
 function reSize() {
   btnSize.textContent = "Grid size";
   btnSize.addEventListener("click", () => {
     let user = prompt("What size do you want your grid to be?");
+    if (user > 100) {
+      reSet();
+      prompt("Please enter a number under 100");
+    }
     if (user === null || user < 1) {
       reSet();
       createDivs(16, 16);
